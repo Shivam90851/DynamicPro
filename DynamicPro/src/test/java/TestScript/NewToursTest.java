@@ -21,7 +21,7 @@ public class NewToursTest extends DriverInit{
 	}
 	@BeforeClass
 	public void navigation() {
-		util.navigate("");
+		util.navigate("https://demo.guru99.com/test/newtours/");
 	}
 	@Test
 	public void run2() {
