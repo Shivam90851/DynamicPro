@@ -1,0 +1,36 @@
+package Script;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import Framework.DriverInit;
+import Framework.Util;
+
+public class NewTours extends DriverInit{
+	WebDriver driver;
+	Util util;
+	
+	@FindBy(xpath="//*[@id='uploadfile_0']")
+	WebElement choosefile;
+	
+	@FindBy(xpath="//*[@id='terms']")
+	WebElement Terms;
+
+	@FindBy(xpath="//*[@id='submitbutton']")
+	WebElement Upload;
+	
+	public NewTours (WebDriver driver){
+		this.driver= driver;
+		PageFactory.initElements(driver, this);
+		util = new Util(driver);
+				
+				
+	}
+	public void Tourdata() {
+		
+	}
+	
+
+}
